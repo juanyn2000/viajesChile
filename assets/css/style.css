@@ -2,3 +2,12 @@ body{
     color: white;
     background-color: black;
 }
+.list-group-item{
+    color:white;
+}
+.card-text{
+    color: white;
+}
+.card-img-top{
+    height: 140px;
+}

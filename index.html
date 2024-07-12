@@ -16,6 +16,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
@@ -47,7 +48,8 @@
   </nav>
   </div>
 </div>
-   
+<!--carrousel-->   
+  <section>
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -94,11 +96,116 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        
-        <section class="container text-center text-white border-bottom"><h1>¿QUIENES SOMOS?</h1></section>
-        
-        <!--desarrollo de cards*/-->
-       
+      </section>    
+
+      <!--desarrollo de cards "¿quienes somos?"-->
+
+        <section class="container text-center text-white border-bottom py-4"><h1>¿QUIENES SOMOS?</h1></section>
+        <section class="container">
+            <div class="row p-4 ">
+              <div class="card bg-black  col-lg-4" >
+                <ul class="list-group">
+                  <li class="list-group-item bg-info text-center border-0"><i class="fa-solid fa-plane"></i></li>
+                  <li class="list-group-item bg-black border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias, voluptatibus iusto quia suscipit cumque veritatis eligendi ratione iste culpa quo enim ipsa laborum debitis corporis consequatur placeat, maiores repellendus!</li>
+                </ul>
+              </div>
+              <div class="card bg-black  col-lg-4" style="width: 18rem;">
+                <ul class="list-group">
+                  <li class="list-group-item bg-black border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias, voluptatibus iusto quia suscipit cumque veritatis eligendi ratione iste culpa quo enim ipsa laborum debitis corporis consequatur placeat, maiores repellendus!</li>
+                  <li class="list-group-item bg-info text-center border-0"><i class="fa-solid fa-plane"></i></li>
+                </ul>
+              </div>
+              <div class="card bg-black  col-lg-4" style="width: 18rem;">
+                <ul class="list-group">
+                  <li class="list-group-item bg-info text-center border-0"><i class="fa-solid fa-plane"></i></li>
+                  <li class="list-group-item bg-black border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias, voluptatibus iusto quia suscipit cumque veritatis eligendi ratione iste culpa quo enim ipsa laborum debitis corporis consequatur placeat, maiores repellendus!</li>
+                </ul>
+              </div>
+            </div>
+        </section>
+
+       <!--cars de "destacados"-->
+
+       <section class="container text-center text-white border-bottom py-4"><h1>DESTACADOS</h1></section>
+       <div class="container">
+        <div class="row py-4 ">
+          <div class="card bg-black p-0 m-1 border-1 border-white col-md-3" >
+            <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ex molestias. Veritatis fuga sunt, necessitatibus porro ullam illum officiis animi inventore, ab voluptate ut. Architecto commodi hic totam soluta.</p>
+            </div>
+          </div>
+          <div class="card bg-black p-0 m-1 border-white col-md-3" >
+            <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ex molestias. Veritatis fuga sunt, necessitatibus porro ullam illum officiis animi inventore, ab voluptate ut. Architecto commodi hic totam soluta.</p>
+            </div>
+          </div>
+          <div class="card bg-black p-0 m-1 border-1px border-white col-md-3" >
+            <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ex molestias. Veritatis fuga sunt, necessitatibus porro ullam illum officiis animi inventore, ab voluptate ut. Architecto commodi hic totam soluta.</p>
+            </div>
+          </div>
+          <div class="card bg-black p-0 m-1 border-1 border-white col-md-3" >
+            <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ex molestias. Veritatis fuga sunt, necessitatibus porro ullam illum officiis animi inventore, ab voluptate ut. Architecto commodi hic totam soluta.</p>
+            </div>
+          </div>
+
+        </div>
+
+       </div>
+<!--formulario de contacto"-->
+
+<section class="container text-center text-white border-bottom py-4"><h1>contacto</h1></section>
+<section class="container">
+  <form>
+    <div class="form-group p-1 my-1">
+      <label for="formGroupExampleInput">Nombre</label>
+      <input
+        type="text"
+        class="form-control my-2 "
+        id="formGroupExampleInput"
+        placeholder="Ingresa tu Nombre"
+      />
+    </div>
+    <label for="formGroupExampleInput">asunto</label>
+    <input
+      type="text"
+      class="form-control my-2"
+      id="formGroupExampleInput"
+      placeholder=""
+    />
+    
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Mensaje</label>
+      <textarea
+        class="form-control my-2"
+        id="exampleFormControlTextarea1"
+        placeholder="Escribe tu mensaje"
+        rows="3"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-info m-2">Enviar</button>
+  </form>
+
+</section>
+
+<footer class="container-fluid bg-info py-3">
+  <div class="row text-center">
+      <p class="col-md-6">VIAJES CHILE</p>
+      <div class="icons col-md-6">
+        <i class="fa-brands fa-square-github px-1"></i>
+        <i class="fa-brands fa-linkedin px-1"></i>
+        <i class="fa-brands fa-square-twitter px-1"></i>
+        <i class="fa-brands fa-square-facebook px-1"></i>
+      </div>
+
+  </div>
+</footer>
 
 
 
