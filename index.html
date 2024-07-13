@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Boostrap v5.3 -->
 
     <link
       rel="shortcut icon"
@@ -24,18 +25,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playwrite+CU:wght@100..400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Creation navbar with icon "viajes.svg"-->
     <nav
       id="navbar"
       class="navbar fixed-top navbar-dark text-white navbar-expand-lg"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="#inicio"
           ><img
             src="./assets/img/viajes.svg"
             alt=""
@@ -75,7 +85,8 @@
       </div>
     </nav>
 
-    <!--carrousel-->
+    <!--carrousel -->
+
     <section id="inicio">
       <div
         id="carouselExampleControls"
@@ -87,21 +98,21 @@
             <img
               src="./assets/img/carousel1.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="alpaca"
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/img/carousel2.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Moais - isla de Rapanui"
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/img/carousel3.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="pinguino de humboldt"
             />
           </div>
         </div>
@@ -126,7 +137,7 @@
       </div>
     </section>
 
-    <!--desarrollo de cards "¿quienes somos?"-->
+    <!--creation of cards with icons that hides on small screens. section "¿quienes somos?"-->
 
     <section
       id="qSomos"
@@ -178,7 +189,7 @@
       </div>
     </section>
 
-    <!--cards de "destacados"-->
+    <!--creation of cards with images and text. Text disappears when you click on the image. section"destacados"-->
 
     <section
       id="destacados"
@@ -190,7 +201,11 @@
       <div class="row">
         <div class="py-0 col-md-3">
           <div class="card bg-black p-0 border-1 border-white">
-            <img src="./assets/img/card1.jpg" class="card-img-top" alt="..." />
+            <img
+              src="./assets/img/card1.jpg"
+              class="card-img-top"
+              alt="lago y montañas"
+            />
             <div class="card-body">
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -203,7 +218,11 @@
         </div>
         <div class="py-0 col-md-3">
           <div class="card bg-black p-0 border-white">
-            <img src="./assets/img/card2.jpg" class="card-img-top" alt="..." />
+            <img
+              src="./assets/img/card2.jpg"
+              class="card-img-top"
+              alt="lago en desierto"
+            />
             <div class="card-body">
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -216,7 +235,11 @@
         </div>
         <div class="py-0 col-md-3">
           <div class="card bg-black p-0 border-1px border-white">
-            <img src="./assets/img/card3.jpg" class="card-img-top" alt="..." />
+            <img
+              src="./assets/img/card3.jpg"
+              class="card-img-top"
+              alt="salar"
+            />
             <div class="card-body">
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -229,7 +252,11 @@
         </div>
         <div class="py-0 col-md-3">
           <div class="card bg-black p-0 border-1 border-white">
-            <img src="./assets/img/card4.jpg" class="card-img-top" alt="..." />
+            <img
+              src="./assets/img/card4.jpg"
+              class="card-img-top"
+              alt="bosque"
+            />
             <div class="card-body">
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -243,7 +270,7 @@
       </div>
     </div>
 
-    <!--formulario de contacto"-->
+    <!--Contact form that does not allow sending with empty boxes. section "contacto"-->
 
     <section
       id="contacto"
@@ -284,13 +311,16 @@
         </div>
         <button type="submit" class="btn btn-info m-2">Enviar</button>
       </form>
+
+      <!-- footer section. contains icons with links to social networks and tooltips -->
     </section>
 
-    <footer class="container-fluid bg-info py-3">
+    <footer class="bg-info py-3">
       <div class="row text-center">
         <p class="col-md-6">VIAJES CHILE</p>
         <div class="icons col-md-6">
           <a
+            class="link-light"
             href="https://github.com/"
             data-bs-toggle="tooltip"
             data-bs-title="ir a github.com"
@@ -298,9 +328,32 @@
           >
             <i class="fa-brands fa-square-github px-1"></i>
           </a>
-          <i class="fa-brands fa-linkedin px-1"></i>
-          <i class="fa-brands fa-square-twitter px-1"></i>
-          <i class="fa-brands fa-square-facebook px-1"></i>
+          <a
+            class="link-light"
+            href="https://cl.linkedin.com/"
+            data-bs-toggle="tooltip"
+            data-bs-title="ir a linkedin.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin px-1"></i></a
+          ><a
+            class="link-light"
+            href="https://x.com/"
+            data-bs-toggle="tooltip"
+            data-bs-title="ir a x.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-x-twitter px-1"></i>
+          </a>
+          <a
+            class="link-light"
+            href="https://www.facebook.com/"
+            data-bs-toggle="tooltip"
+            data-bs-title="ir a facebook.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-github px-1"></i>
+          </a>
         </div>
       </div>
     </footer>
