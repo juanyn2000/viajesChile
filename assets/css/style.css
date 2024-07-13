@@ -1,4 +1,16 @@
-body{
-    color: white;
-    background-color: black;
+body {
+  color: white;
+  background-color: black;
+}
+* {
+  font-family: "cabin", sans-serif;
+}
+.list-group-item {
+  color: white;
+}
+.card-text {
+  color: white;
+}
+.card-img-top {
+  height: 140px;
 }
